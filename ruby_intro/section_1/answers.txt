@@ -1,0 +1,13 @@
+1. Have a doubt on this.
+2. puts 5*3 -> 15
+   puts 5**3 -> 125
+3. This method is not safe for use with multi-byte characters as it will truncate them.
+4. print("I am", "a""Web", "Developer") -> I amaWebDeveloper
+   puts("I am", "a""Web", "Developer") -> puts take only one argument so it will throw an          error.
+5. "beautiful code".capitalize -> Beautiful Code
+   "beautiful code".upcase -> BEAUTIFUL CODE
+6. gets add a next line after each bit of input taken and chomp removes the extra lines after each bit and just adds a next after the input is taken after pressing the enter key
+7. ... excludes the last limit from for loop whereas .. includes the last limit in the for loop
+8. Have a doubt on this one as well
+9. Arrays have index values to be numeric whereas hashes can be indexed using strings
+   
