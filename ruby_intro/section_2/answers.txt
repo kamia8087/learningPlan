@@ -3,13 +3,13 @@
    b. [3,5,6,2,7].sort { |x,y|  y<=>x} ==> [7,6,5,3,2]
    c. [1,3,5] ⇔ [2,5] ==> -1
    d. [2,6,8] ⇔ [2,6,7] ==> 1
-3. Symbols are faster than strings as they are immutable, consumes less memory aand more faster because of first two reasons
-4. .to_sym and .intern both do the same work, .intern just internalizes the string into a string.
-5. '||=' is a conditional assignemnt operator -- it is different from '=' in a way that it assigns a value to a variable only if it has a nil value before.
+3. Symbols are better than strings as they are immutable, consumes less memory aand more faster because of first two reasons
+4. .to_sym and .intern both do the same work, .intern just internalizes the string into a symbol.
+5. '||=' is a conditional assignemnt operator - it is different from '=' in a way that it assigns a value to a variable only if it has a nil value before.
 6. - 'Blocks' don't have any name and need to be coded again if used somewhere e
      lse
    - 'Blocks' are not objects in Ruby.
-   - 'Procs' : when we give a name to a block it turns into a Proc and this way      we can keep our code DRY (Don't Repeat Yoursef)
+   - 'Procs' : when we give a name to a block it turns into a Proc and this way we can keep our code DRY (Don't Repeat Yoursef)
    - 'Procs' are objects in Ruby
 7. First, a lambda checks the number of arguments passed to it, while a proc does not. This means that a lambda will throw an error if you pass it the wrong number of arguments, whereas a proc will ignore unexpected arguments and assign nil to any that are missing.
 
