@@ -1,0 +1,17 @@
+1. Some doubt on this one. 
+2. Instance variables are those which are associated to the instances of a class and cannot be accessed outside those instances - eg : @name is an instance variable declared with a @ followed by the name of the variable.
+   Class variables are associated to a particular class and can be accessed be any method of that class. Eg: @@class_variable is declared with a double @ before the variable name.
+3. When you call super from inside a method, that tells Ruby to look in the superclass of the current class and find a method with the same name as the one from which super is called. If it finds it, Ruby will use the superclass’ version of the method.
+4. We can use attr_reader to access a variable and attr_writer to change it.
+   class Person
+     attr_reader :name
+     attr_writer :name
+     def initialize(name)
+    	@name = name
+     end
+   end
+   In Ruby , attributes are translated into symbols while accessing them using a   attr_reader or attr_writer.
+5. 'require' keyword is used when we have to access some pre-existing modules on a global level.
+   'include' mixes a module’s methods in at the instance level allowing instances of a particular class to use the methods.
+   'extend' keyword mixes a module’s methods at the class level. This means that class itself can use the methods, as opposed to instances of the class.
+
